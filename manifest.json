@@ -1,0 +1,43 @@
+{
+    "manifest_version": 2,
+    "name": "Heximo",
+    "version": "0.5.1",
+    "description": "History export/import extension for firefox",
+    "icons": {
+        "16": "icons/sakura.jpg",
+        "32": "icons/sakura.jpg",
+        "48": "icons/sakura.jpg",
+        "96": "icons/sakura.jpg"
+    },
+   
+    "sidebar_action": {
+        "default_icon": {
+          "32": "icons/sakura.jpg"
+        },
+        "default_title": "Tab Map",
+        "default_panel": "tabMap/index.html",
+        "browser_style": true
+      },
+      "browser_action": {
+        "browser_style": true,
+        "default_title": "Window manipulator",
+        "default_popup": "tabMap/index.html",
+        "default_icon": {
+          "19": "icons/window19.png",
+          "38": "icons/window38.png"
+        }
+    },
+    "background": {
+        "scripts": [
+            "background.js"
+        ]
+    },
+    "permissions": [
+        "<all_urls>",
+        "history",
+        "downloads",
+        "menus",
+        "activeTab",
+        "tabs"
+    ]
+}
